@@ -39,6 +39,7 @@ jobs:
           name: Install awscli
           command: |
             curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+            python get-pip.py
             sudo /root/pip install awsebcli --upgrade
 
       - run:
