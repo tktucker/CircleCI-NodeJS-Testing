@@ -5,19 +5,9 @@
 version: 2
 jobs:
   build:
-    environment:
-       SERVER_IP_ADDRESS: 138.68.163.126
-       DOKKU_APP: circlecidemo
-       TRAVIS: "false"
-
-#dependencies:
-#  pre:
-#      - pip install awsebcli
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10
-      # the Docker image with Cypress dependencies
-      #- image: cypress/base:8
 
         environment:
           ## this enables colors in the output
@@ -49,6 +39,7 @@ jobs:
           name: Install awscli
           command: |
             sudo pip install awsebcli --upgrade
+
       - run:
           name: Create AWS credentials manually
           command: |
