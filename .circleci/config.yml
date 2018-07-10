@@ -39,7 +39,7 @@ jobs:
           name: Install awscli
           command: |
             curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-            sudo pip install awsebcli --upgrade
+            sudo ~/pip install awsebcli --upgrade
 
       - run:
           name: Create AWS credentials manually
