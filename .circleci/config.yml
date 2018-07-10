@@ -17,7 +17,7 @@ jobs:
       # specify the version you desire here
       - image: circleci/node:7.10
       # the Docker image with Cypress dependencies
-      - image: cypress/base:8
+      #- image: cypress/base:8
 
         environment:
           ## this enables colors in the output
