@@ -1,0 +1,19 @@
+{
+  "name": "circleci-hello-world-nodejs",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node hello.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tktucker/CircleCI-NodeJS-Testing.git"
+  },
+  "keywords": [
+    "circle-ci",
+    "continuous",
+    "integration",
+    "tutorial"
+  ]
+}
