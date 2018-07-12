@@ -59,6 +59,6 @@ jobs:
       - run:
           name: Deploy to EB if branch is Master
           command: |
-            eb init --region us-east-1 --platform MyNodeJSApp appname
+            eb init --region us-east-1 --platform MyNodeJSApp appname -k awsSupport-USG -p Node.js
             #eb use circleci-beanstalk-example --profile eb-cli --region us-east-1
             eb deploy -v --staged --profile eb-cli
