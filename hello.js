@@ -1,3 +1,3 @@
 module.exports = function hello () {
-  return 'Hello You Sexy Bastard!';
+  return 'Hello, USG.  You Sexy Bastard!';
 }
